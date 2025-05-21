@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipes - Login</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Login</h1>
+
+            <!-- Checks for error message -->
+            {% if error_message %}
+                <p class="error">{{error_message}}</p>
+            {% endif %}
+
+            <form action="" method="POST" >
+                <!-- Adds Django security token -->
+                {% csrf_token %}   
+
+                <!-- Defines form layout -->
+                <div class="form-group">
+                    {{ form.username.label_tag }}
+                    {{ form.username }}
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    {{ form.password.label_tag }}
+                    {{ form.password }}
+                </div>
+
+                <br>
+
+                <!-- Login button -->
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </body>
+</html>

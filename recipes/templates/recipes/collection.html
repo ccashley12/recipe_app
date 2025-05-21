@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Recipes - Collection{% endblock %}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'recipes/css/collection.css' %}">
+    </head>
+
+    <body>
+        {% block content %}
+            <h1>Recipes - Collection</h1>
+
+            <!-- Table displaying recipes and their images -->
+            <table border="1" cellpadding="5" cellspacing="5">
+                <tr>
+                    <td>Recipe Name</td>
+                    <td>Image</td>
+                </tr>
+
+                {% for object in object_list %}
+                <tr>
+                    <td>
+                        <a href="{{object.get_absolute_url}}">{{object.name}}</a>
+                    </td>
+                    
+                    <td>
+                        <a href="{{object.get_absolute_url}}"><img src="{{object.pic.url}}"></a>
+                    </td>
+                </tr>
+                
+                <br>
+                {% endfor %}   
+            </table>
+        {% endblock %}
+    </body>
+</html>

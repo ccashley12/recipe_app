@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Recipes - {{object.name}}{% endblock %}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'recipes/css/detail.css' %}">
+    </head>
+
+    <body>
+        {% block content %}
+            <h1 class="detail-header">Details: {{object.name}}</h1>
+            
+            <div class="details-container">
+                <b>Ingredients: </b> {{object.ingredients}}
+
+                <br>
+
+                <b>Cooking Time (in minutes): </b> {{object.cooking_time}}
+
+                <br>
+
+                <b>Difficulty: </b> {{object.difficulty}}
+
+                <br>
+
+                <img src="{{object.pic.url}}" alt="{{object.name}}">
+            </div>
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}MySite{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'recipes/css/about.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'recipes/css/collection.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'recipes/css/detail.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'recipes/css/search.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'recipes/css/add_recipe.css' %}">
+    </head>
+
+    <body>
+        {% include "navigation/navigation.html" %}
+
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

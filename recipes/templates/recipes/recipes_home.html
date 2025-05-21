@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipes - Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="{% static 'recipes/css/home.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Recipes</h1>
+
+            <p>Search for Recipes and Add Your Own Recipe</p>
+
+            <br>
+            <a href="{% url 'login' %}">Login</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Recipes - About{% endblock %}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{% static 'recipes/css/about.css' %}">
+    </head>
+
+    <body>
+        {% block content %}
+            <h1>About Me</h1>
+
+            <div class="about-container">
+                <h2 class="contact-header">Contact Info</h2>
+                
+                <div>Email: <a href="mailto:ccashley12@gmail.com">ccashley12@gmail.com</a></div>
+
+                <div>Portfolio: <a href="https://ccashley12.github.io/portfolio-site/index.html" target="_blank">Portfolio</a></div>
+
+                <div>LinkedIn: <a href="https://www.linkedin.com/in/christopher-ashley-7a492b191/" target="_blank">LinkedIn</a></div>
+
+                <div>GitHub: <a href="https://github.com/ccashley12" target="_blank">GitHub</a></div>
+            </div>
+        {% endblock %}
+    </body>
+</html>

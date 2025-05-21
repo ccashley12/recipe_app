@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HOME PAGE FOR RECIPE APP -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'recipes/css/home.css' %}">
+    <title>Logged Out</title>
+</head>
+
+<body>
+    <div class="model">
+        <span class="text">
+
+        <body>
+            <h1> Successfully Logged Out! </h1>
+            <a style="background: #fff9e8;" href="{% url 'login' %}"><button> Want to log back in? </button></a>
+        </body>
+        </span>
+    </div>
+</body>
+
+</html>
