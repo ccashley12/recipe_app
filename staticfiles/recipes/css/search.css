@@ -1,0 +1,59 @@
+body {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #396125;
+    background-color: #fff9e8;
+    margin: 0;
+    padding: 0;
+}
+
+.search-header {
+    background-color: #fff9e8;
+    width: 100%;
+    margin-top: 62px;
+    padding: 10px;
+    text-align: center;
+    border: thick double #396125;
+}
+
+.search-form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: solid 2px #396125;
+    border-radius: 8px;
+    background-color: #fff9e8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.results-header {
+    background-color: #fff9e8;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: thick double #396125;
+}
+
+h3 {
+    align-items: center;
+    background-color: #fff9e8;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    border: solid 2px #396125;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.chart-image {
+    max-width: 700px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 10px auto 70px;
+    border: thick double #396125;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

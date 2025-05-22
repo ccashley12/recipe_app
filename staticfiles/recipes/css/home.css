@@ -1,0 +1,42 @@
+body {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #fff9e8;
+    border: thick double #396125;
+    border-width: 90%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #396125;
+    font-size: 3em;
+    text-align: center;
+    width: auto;
+}
+
+.container {
+    width: 40%;
+    position: center;
+    top: 200px;
+    left: 50px;
+    padding: 20px;
+    background-color: #fff9e8;
+    border: thick double #396125;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.container p {
+    text-align: center;
+    color: #396125;
+}
+
+.container a {
+    align-items: center;
+}

@@ -1,0 +1,64 @@
+body {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #396125;
+    background-color: #fff9e8;
+    margin: 0;
+    padding: 0;
+}
+
+.recipes-header {
+    position: absolute;
+    background-color: #fff9e8;
+    width: 100%;
+    margin-top: 62px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.recipe-name {
+    color: #396125;
+    text-decoration: none;
+}
+
+.recipe-name:hover {
+    text-decoration: wavy;
+}
+
+.recipe-name:visited {
+    color: blueviolet;
+}
+
+/* Table styles */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border: solid 2px #396125;
+    border-radius: 8px;
+    background-color: #fff9e8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+table td, table th {
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #fff;
+}
+
+/* Ensures images maintain aspect ratio while having the same dimensions */
+table img {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+}
