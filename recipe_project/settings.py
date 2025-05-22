@@ -27,6 +27,8 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','django-insecure-ml49cp(e)=yakpe
 DEBUG = False
 
 ALLOWED_HOSTS = [
+    'vast-plains-26046-905b11336271.herokuapp.com',
+    'git.heroku.com/vast-plains-26046.git',
     '127.0.0.1',
     '127.0.0.1:8000',
     'localhost',
