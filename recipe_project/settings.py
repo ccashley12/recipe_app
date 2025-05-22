@@ -137,8 +137,7 @@ cloudinary.config(
     secure = True
 )
 
-# Use Cloudinary
-image_upload = cloudinary.uploader.upload('<file_path>')
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
